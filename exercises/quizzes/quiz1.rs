@@ -10,10 +10,18 @@
 
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
-// fn calculate_price_of_apples(???) -> ??? { ??? }
+fn calculate_price_of_apples(b: i32) -> i32 { 
+    let mut a = 2;
+    if b > 40 {
+        a = 1;
+    }
+    a * b
+ }
 
 fn main() {
     // You can optionally experiment here.
+    let price = calculate_price_of_apples(40);
+    println!("The price of the apples is: {price} rustbucks" );
 }
 
 // Don't change the tests!

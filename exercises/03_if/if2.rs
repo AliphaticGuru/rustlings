@@ -1,14 +1,20 @@
 // TODO: Fix the compiler error on this function.
 fn picky_eater(food: &str) -> &str {
     if food == "strawberry" {
+        println!("Yummy!");
         "Yummy!"
+    } else if food == "potato" {
+        println!("Tasty_potato");
+        "I guess I can eat that."
     } else {
-        1
+        println!("No thanks!");
+        "No thanks!"
     }
 }
 
 fn main() {
     // You can optionally experiment here.
+    picky_eater("beef");
 }
 
 // TODO: Read the tests to understand the desired behavior.
